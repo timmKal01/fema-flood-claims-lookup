@@ -73,6 +73,6 @@ the newer v3 endpoint since FEMA has deprecated v2 and stopped updating it.
 
 ## Related products
 
-- [FEMA Disaster Assistance Tracker](https://github.com/timmKal01/fema-disaster-assistance-tracker) — individual disaster assistance registrant activity, a broader signal than flood-specific claims
-- [Disaster Declaration Tracker](https://github.com/timmKal01/disaster-declaration-tracker) — new FEMA disaster declarations, upstream of the claims this actor searches
-- [Coastal Water Level Tracker](https://github.com/timmKal01/coastal-water-level-tracker) — real-time NOAA tide data, for current coastal flood risk rather than historical claims
+- [FEMA Disaster Assistance Tracker](https://github.com/timmKal01/fema-disaster-assistance-tracker): individual disaster assistance registrant activity, a broader signal than flood-specific claims
+- [Disaster Declaration Tracker](https://github.com/timmKal01/disaster-declaration-tracker): new FEMA disaster declarations, upstream of the claims this actor searches
+- [Coastal Water Level Tracker](https://github.com/timmKal01/coastal-water-level-tracker): real-time NOAA tide data, for current coastal flood risk rather than historical claims
