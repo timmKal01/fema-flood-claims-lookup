@@ -1,0 +1,34 @@
+{
+    "title": "FEMA Flood Claims Lookup Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "state": {
+            "title": "State",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Two-letter US state code, e.g. \"TX\". Provide this and/or countyCode."
+        },
+        "countyCode": {
+            "title": "County FIPS code",
+            "type": "string",
+            "editor": "textfield",
+            "description": "5-digit county FIPS code, e.g. \"48201\" for Harris County, TX. Provide this and/or state."
+        },
+        "yearOfLossFrom": {
+            "title": "Year of loss, from",
+            "type": "integer",
+            "editor": "number",
+            "description": "Only include claims with a loss year at or after this year. Leave blank for all years."
+        },
+        "maxResults": {
+            "title": "Max results",
+            "type": "integer",
+            "editor": "number",
+            "description": "Maximum number of claims to return, most recent loss first.",
+            "default": 50,
+            "minimum": 1,
+            "maximum": 500
+        }
+    }
+}
