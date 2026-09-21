@@ -71,6 +71,10 @@ One direct call to the OpenFEMA NFIP Redacted Claims v3 API
 (`fema.gov/api/open/v3/NfipClaims`), no scraping, no key, no proxy. Uses
 the newer v3 endpoint since FEMA has deprecated v2 and stopped updating it.
 
+## Pricing note
+
+Billed per **search**, not per claim returned, one charge whether the search returns 1 claim or up to the requested max.
+
 ## Related products
 
 - [FEMA Disaster Assistance Tracker](https://github.com/timmKal01/fema-disaster-assistance-tracker): individual disaster assistance registrant activity, a broader signal than flood-specific claims
