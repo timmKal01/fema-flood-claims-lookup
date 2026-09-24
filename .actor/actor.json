@@ -1,7 +1,7 @@
 {
     "actorSpecification": 1,
     "name": "fema-flood-claims-lookup",
-    "title": "FEMA Flood Claims Lookup: NFIP Data by State or County",
+    "title": "Flood Insurance Claims Data: FEMA NFIP Lookup",
     "description": "Search official NFIP flood insurance claim history by state or county: damage amounts, flood zone, cause of damage, and payout totals. For real estate and flood insurance underwriting research. No key, no proxy.",
     "version": "0.1",
     "meta": {
