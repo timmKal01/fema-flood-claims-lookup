@@ -7,7 +7,8 @@
             "title": "State",
             "type": "string",
             "editor": "textfield",
-            "description": "Two-letter US state code, e.g. \"TX\". Provide this and/or countyCode."
+            "description": "Two-letter US state code, e.g. \"TX\". Provide this and/or countyCode. If both are empty, Texas is used.",
+            "prefill": "TX"
         },
         "countyCode": {
             "title": "County FIPS code",

@@ -4,13 +4,19 @@ import { fetchClaims } from './fema.js';
 await Actor.init();
 
 const input = (await Actor.getInput()) ?? {};
-const { state, countyCode, yearOfLossFrom, maxResults = 50 } = input;
+const { countyCode, yearOfLossFrom, maxResults = 50 } = input;
+let { state } = input;
 
 /** Must match the event name configured in this Actor's pay-per-event pricing on Apify. */
 const CLAIMS_SEARCH_EVENT = 'claims-search';
 
+// An empty run (first click in the Console, Apify's daily health check) used to
+// throw here and got the actor flagged "under maintenance". Fall back to a
+// working example instead. Only when both are empty: a default state would
+// wrongly narrow a county-only search.
 if (!state && !countyCode) {
-    throw new Error('Provide at least "state" (two-letter code) or "countyCode" to scope the search.');
+    state = 'TX';
+    log.info('No state or countyCode given; defaulting to state "TX".');
 }
 
 const claims = await fetchClaims({
